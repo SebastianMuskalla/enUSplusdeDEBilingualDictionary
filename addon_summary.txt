@@ -1,0 +1,3 @@
+This is a bilingual dictionary for American English and German Standard German.
+It is meant for users who regularly write in German and English.
+With it, you will not need to manually switch between dictionaries for the two languages.

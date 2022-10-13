@@ -1,0 +1,26 @@
+This is a bilingual dictionary for enUS (American English) and deDE (German Standard German).
+
+This dictionary is meant for users who regularly write in German and English.
+If you load this dictionary, you will <strong>not need to manually switch between dictionaries for the two languages</strong>.
+
+As a downside, sentences that are half-German and half-English, but correct in neither language will erroneously be seen as correct by the spellchecker,
+e.g. "Ich like dieses dictionary."
+In other words, this dictionary will <strong>not warn you when you mix the two languages</strong>.
+
+<strong>Note:</strong> This dictionary registers as a dictionary for American English.
+Hence, after installing it, you will need to set your spellchecking to American English for it to work.
+
+The sources and more information are available on <a href="https://github.com/SebastianMuskalla/enUSplusdeDEBilingualDictionary">GitHub</a>.
+
+<em>License / Copyright:</em>
+
+This dictionary is free and open-source software,
+licensed under the GPLv3 (GNU General Public License version 3).
+
+This dictionary is based on the German dictionary "igerman98",
+Copyright 1999-2016 Björn Jacke,
+licensed under the GPLv3.
+
+This dictionary is based on the en_US Hunspell Dictionary,
+Copyright 2000-2018 Kevin Atkinson,
+licensed under a GPLv3-compatible license.
