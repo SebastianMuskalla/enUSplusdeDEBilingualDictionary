@@ -1,0 +1,223 @@
+#
+# HEADER
+#
+
+SET UTF-8
+# dictionary is set in utf8
+
+TRY esianrtolcdugmphbyfvkwzESIANRTOLCDUGMPHBYFVKWZ'
+
+# ordinal numbers
+COMPOUNDMIN 1
+# only in compounds: 1th, 2th, 3th
+ONLYINCOMPOUND b
+# compound rules:
+# 1. [0-9]*1[0-9]th (10th, 11th, 12th, 56714th, etc.)
+# 2. [0-9]*[02-9](1st|2nd|3rd|[4-9]th) (21st, 22nd, 123rd, 1234th, etc.)
+COMPOUNDRULE 2
+COMPOUNDRULE a*1t
+COMPOUNDRULE a*dl
+WORDCHARS 0123456789
+
+
+#
+# PREFIX RULES
+#
+
+PFX r Y 1
+PFX r   0     re         .
+
+PFX s Y 1
+PFX s   0     in         .
+
+PFX u Y 1
+PFX u   0     un         .
+
+PFX v Y 1
+PFX v   0     de          .
+
+PFX 2 Y 1
+PFX 2   0     dis         .
+
+PFX 3 Y 1
+PFX 3   0     con         .
+
+PFX 4 Y 1
+PFX 4   0     pro         .
+
+
+#
+# SUFFIX RULES
+#
+
+SFX 5 N 2
+SFX 5   e     ive        e
+SFX 5   0     ive        [^e]
+
+SFX 6 Y 3
+SFX 6   e     ion        e
+SFX 6   y     ication    y
+SFX 6   0     en         [^ey]
+
+SFX 7 Y 3
+SFX 7   e     ions       e
+SFX 7   y     ications   y
+SFX 7   0     ens        [^ey]
+
+SFX H N 2
+SFX H   y     ieth       y
+SFX H   0     th         [^y]
+
+SFX 8 Y 1
+SFX 8   0     ly         .
+
+SFX G Y 2
+SFX G   e     ing        e
+SFX G   0     ing        [^e]
+
+SFX 9 Y 2
+SFX 9   e     ings       e
+SFX 9   0     ings       [^e]
+
+SFX ( Y 4
+SFX (   0     d          e
+SFX (   y     ied        [^aeiou]y
+SFX (   0     ed         [^ey]
+SFX (   0     ed         [aeiou]y
+
+SFX ) N 4
+SFX )   0     st         e
+SFX )   y     iest       [^aeiou]y
+SFX )   0     est        [aeiou]y
+SFX )   0     est        [^ey]
+
+SFX < Y 4
+SFX <   0     r          e
+SFX <   y     ier        [^aeiou]y
+SFX <   0     er         [aeiou]y
+SFX <   0     er         [^ey]
+
+SFX > Y 4
+SFX >   0     rs         e
+SFX >   y     iers       [^aeiou]y
+SFX >   0     ers        [aeiou]y
+SFX >   0     ers        [^ey]
+
+SFX [ Y 4
+SFX [   y     ies        [^aeiou]y
+SFX [   0     s          [aeiou]y
+SFX [   0     es         [sxzh]
+SFX [   0     s          [^sxzhy]
+
+SFX ] Y 3
+SFX ]   y     iness      [^aeiou]y
+SFX ]   0     ness       [aeiou]y
+SFX ]   0     ness       [^y]
+
+SFX - Y 1
+SFX - 0     's         .
+
+SFX + Y 3
+SFX +   0     able       [^aeiou]
+SFX +   0     able       ee
+SFX +   e     able       [^aeiou]e
+
+SFX * Y 1
+SFX *   0     ment       .
+
+
+#
+# REPLACEMENT SUGGESTIONS
+#
+
+REP 90
+REP a ei
+REP ei a
+REP a ey
+REP ey a
+REP ai ie
+REP ie ai
+REP alot a_lot
+REP are air
+REP are ear
+REP are eir
+REP air are
+REP air ere
+REP ere air
+REP ere ear
+REP ere eir
+REP ear are
+REP ear air
+REP ear ere
+REP eir are
+REP eir ere
+REP ch te
+REP te ch
+REP ch ti
+REP ti ch
+REP ch tu
+REP tu ch
+REP ch s
+REP s ch
+REP ch k
+REP k ch
+REP f ph
+REP ph f
+REP gh f
+REP f gh
+REP i igh
+REP igh i
+REP i uy
+REP uy i
+REP i ee
+REP ee i
+REP j di
+REP di j
+REP j gg
+REP gg j
+REP j ge
+REP ge j
+REP s ti
+REP ti s
+REP s ci
+REP ci s
+REP k cc
+REP cc k
+REP k qu
+REP qu k
+REP kw qu
+REP o eau
+REP eau o
+REP o ew
+REP ew o
+REP oo ew
+REP ew oo
+REP ew ui
+REP ui ew
+REP oo ui
+REP ui oo
+REP ew u
+REP u ew
+REP oo u
+REP u oo
+REP u oe
+REP oe u
+REP u ieu
+REP ieu u
+REP ue ew
+REP ew ue
+REP uff ough
+REP oo ieu
+REP ieu oo
+REP ier ear
+REP ear ier
+REP ear air
+REP air ear
+REP w qu
+REP qu w
+REP z ss
+REP ss z
+REP shun tion
+REP shun sion
+REP shun cion
+REP size cise

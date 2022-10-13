@@ -1,0 +1,13 @@
+{
+  "dictionaries": {
+    "en-US": "dictionaries/enusdede.dic"
+  },
+  "version": "1",
+  "applications": {
+    "gecko": {
+      "id": "@enusplusdedebilingualdictionary"
+    }
+  },
+  "name": "enUS plus deDE bilingual dictionary",
+  "manifest_version": 2
+}

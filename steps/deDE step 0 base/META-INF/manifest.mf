@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+
+Name: manifest.json
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: kJi2K6pmUTxWuDhE48etWQ==
+SHA1-Digest: jVjuENfghUcbq4hrQG99vkp8btE=
+SHA256-Digest: 67pKm2zG6bTAjT3zBztCmPhwIKFrCa4/Xrlfhw8XYOw=
+
+Name: dictionaries/de-DE.aff
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: a/BfvMYvstfJtirMzAB1cA==
+SHA1-Digest: OLemok1qgnUSmyBI9GlcaPK3cFU=
+SHA256-Digest: PZNYHH6p1Hba6vU1xOJ91e4U4sVEghdKD59njYaWM6w=
+
+Name: dictionaries/de-DE.dic
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: rxbgo3FErssVfPYdSMUIeg==
+SHA1-Digest: IQK5xxmiOrQtnjme/HAROATWEH4=
+SHA256-Digest: fnZIRiCnJUMPRsTMuW/FV46lXeODchHHVGUjOCV611Q=
+

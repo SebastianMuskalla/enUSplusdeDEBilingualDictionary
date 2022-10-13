@@ -1,0 +1,13 @@
+{
+  "dictionaries": {
+    "en-US": "dictionaries/en-US.dic"
+  },
+  "version": "78.0",
+  "applications": {
+    "gecko": {
+      "id": "@unitedstatesenglishdictionarymodified"
+    }
+  },
+  "name": "English United States Dictionary MODIFIED",
+  "manifest_version": 2
+}
