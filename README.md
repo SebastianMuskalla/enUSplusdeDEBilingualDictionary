@@ -18,45 +18,48 @@ e.g. "Ich like dieses dictionary."
 In other words, this dictionary will not warn you when you mix the two languages.
 
 
-Installation instructions
--------------------------
+Mozilla Firefox & Thunderbird: Installation via the browser
+-----------------------------------------------------------
 
 We provide this dictionary as an add-on for Mozilla Firefox and Thunderbird.
-With the files contained in this repository, one could also install it in any other software that supports Hunspell dictionaries.
+It can be found in the add-on gallery under the name "enUS deDE bilingual dictionary":
 
-**Note:** This dictionary will register as a dictionary for American English.
+* <https://addons.mozilla.org/en-US/firefox/addon/enus-dede-bilingual-dictionary>
+* <https://addons.thunderbird.net/en-US/thunderbird/addon/enus-dede-bilingual-dictionary>
+
+### Step-by-step installation guide
+
+* Open the hamburger menu (on the top-right) and select "Add-ons and Themes" to open the add-on manager.
+* In the search bar next to "Find more add-ons", search for "bilingual dictionary".
+* Find the add-on and click "Add to Firefox" (resp. "Add to Thunderbird").
+* Confirm the Installation by clicking "Add" in the resulting pop-up.
+
+### Note:
+
+This dictionary will register as a dictionary for American English.
 You will need to set your spell checking to American English for this dictionary to work.
 
-### Firefox: Automatic installation
-
-*tbd*
-
-### Thunderbird: Automatic installation
-
-This dictionary is available as an add-on for Thunderbird via the add-on gallery.
-
-<https://addons.thunderbird.net/en-US/thunderbird/addon/enus-dede-bilingual-dictionary/>
-
-Inside Thunderbird, you can open the Add-ons Manager (Click the "Tools" menu and select "Add-ons and Themes"), search e.g. for "bilingual", and then click "Add to Thunderbird".
+Right-click in a text box, open the "Languages" sub-menu and select "English (United States)".
 
 
-### Firefox & Thunderbird: Manual installation via `.xpi` files
+Manual installation
+-------------------
 
 From the **Releases** section in the sidebar of this page, you can download this dictionary as an add-on for Mozilla Firefox and Thunderbird (in the form of a signed `.xpi` file).
 
 
-### Mozilla Firefox: Manual installation (option 1)
+### Mozilla Firefox (Option 1)
 
-Click the latest release in the sidebar, then click on the file
+On this page, click the latest release in the sidebar, then click on the file
 `firefox_enus_plus_dede_bilingual_dictionary-1.xpi`.
 Firefox should ask you whether you want to install the add-on.
 Click "Continue to installation" and "Add".
 
-### Mozilla Firefox: Manual installation (option 2)
+### Mozilla Firefox (Option 2)
 
-* Click the latest release in the sidebar, then download the archive `firefox_enus_plus_dede_bilingual_dictionary-1.zip`.
-* Extract the file `firefox_enus_plus_dede_bilingual_dictionary-1.xpi ` contained in this archive to some location on your computer.
-* In Firefox, open the menu "Tools" and select on "Add-ons and Themes".
+* On this page, click the latest release in the sidebar, then download the archive `firefox_enus_plus_dede_bilingual_dictionary-1.zip`.
+* Extract the file `firefox_enus_plus_dede_bilingual_dictionary-1.xpi` contained in this archive to some location on your computer.
+* In Firefox, open the hamburger menu and select on "Add-ons and Themes".
   The Add-on manager will open.
 * Select "Dictionaries" in the sidebar.
 * Click the cog icon on the top right and select "Install Add-on from File".
@@ -67,9 +70,9 @@ This has been tested using Mozilla Firefox 105.0.3 on Windows 10 21H2.
 
 ### Thunderbird: Manual installation
 
-* Click the latest release in the sidebar, then download the archive `thunderbird_enus_plus_dede_bilingual_dictionary-1.zip`.
+* On this page, click the latest release in the sidebar, then download the archive `thunderbird_enus_plus_dede_bilingual_dictionary-1.zip`.
 * Extract the file `thunderbird_enus_plus_dede_bilingual_dictionary-1.xpi` contained in this archive to some location on your computer.
-* In Thunderbird, open the menu "Tools" and select on "Add-ons and Themes".
+* In Thunderbird, open the hamburger menu and select on "Add-ons and Themes".
   The Add-on manager will open.
 * Select "Dictionaries" in the sidebar.
 * Click the cog icon on the top right and select "Install Add-on from File".
@@ -80,7 +83,7 @@ This has been tested using Thunderbird 102.3.3 on Windows 10 21H2.
 
 ### Other software supporting Hunspell
 
-The folder `bundle/dictionaries` contains the two files that are needed for the dictionary:
+The folder `bundle/dictionaries` contains the two files that constitute the dictionary:
 
 * [enusdede.dic](bundle/dictionaries/enusdede.dic), the word list.
 
